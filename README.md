@@ -82,7 +82,8 @@ bun dev
 ## Learn More
 ### Front-End Stack
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Prisma Documentation](https://www.prisma.io/docs/getting-started)
+- [Typescript Documentation](https://www.typescriptlang.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
 
 ## Deployment
 To deploy this app, consider platforms like [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Ensure the environment variable NEXT_PUBLIC_API_BASE_URL points to your deployed back-end.
