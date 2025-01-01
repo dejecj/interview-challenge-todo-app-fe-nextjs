@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, useTransition, useOptimistic } from "react";
-import { Task, TaskAPIResponse } from "@/types/task";
+import { Task, ListTasksAPIResponse } from "@/types/task";
 import { TaskItem } from "./task-item";
 import { EmptyState } from "./empty-state";
 import { Separator } from "./ui/separator";
@@ -14,7 +14,7 @@ export function TaskList() {
     const load = async () => {
       const taskRequest = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL as string}/tasks`, { cache: 'no-store' });
       if (taskRequest.ok) {
-        const payload: TaskAPIResponse = await taskRequest.json();
+        const payload: ListTasksAPIResponse = await taskRequest.json();
         setTasks(payload.data);
       }
     }
